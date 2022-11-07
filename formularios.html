@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 - CSS3</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+        </header>
+        <div id="principal">
+            <nav>
+                <!-- ul>a*9>li  -->
+                <ul>
+                    <a href="index.html">
+                        <li>HOME</li>
+                    </a>
+                    <a href="parrafos.html">
+                        <li>PÁRRAFOS</li>
+                    </a>
+                    <a href="enlaces.html">
+                        <li>ENLACES</li>
+                    </a>
+                    <a href="listas.html">
+                        <li>LISTAS</li>
+                    </a>
+                    <a href="tablas.html">
+                        <li>TABLAS</li>
+                    </a>
+                    <a href="formularios.html">
+                        <li>FORMULARIOS</li>
+                    </a>
+                    <a href="multimedia.html">
+                        <li>MULTIMEDIA</li>
+                    </a>
+                    <a href="formhtml5.html">
+                        <li>FORM-HTML5</li>
+                    </a>
+                </ul>
+            </nav>
+            <div id="content">
+                <div id="form">
+                    <h1 class="txt-center">Formularios</h1>
+                    <h2>Form login</h2>
+                    <form action="pagina.html" method="post">
+                        User: <input type="text" name="user" /><br /><br />
+                        Password: <input type="password" name="clave" /><br /><br />
+                        <input type="submit" value="Aceptar" />
+                    </form>
+                    <h2>Form registro:</h2>
+                    <form class="registro" action="pagina.html" method="get">
+                        <fieldset>
+                            <legend>Register</legend>
+                            <input class="w100" type="text" name="user" placeholder="User"/><br /><br />
+                            <input class="w50" type="text" name="nick" placeholder="Nick"/>
+                            <input class="w50" type="password" name="clave" placeholder="Password"/><br /><br />
+                            Comentarios:<br/>
+                            <textarea name="comentarios" id="" class="w100" rows="3"></textarea><br /><br />
+
+                            Aficiones:<br />
+                            <input type="checkbox" name="aficiones" value="cine" id="">Cine<br />
+                            <input type="checkbox" name="aficiones" value="viajes" id="">Viajes<br />
+                            <input type="checkbox" name="aficiones" value="games" id="">Games<br />
+                            <input type="checkbox" name="aficiones" value="sexo" id="">Sexo<br />
+                            <br /><br />
+                            Sexo:<br />
+                            <input type="radio" name="sexo" value="Hombre" id="">Hombre<br />
+                            <input type="radio" name="sexo" value="Mujer" id="">Mujer<br />
+                            <input type="radio" name="sexo" value="otro" id="">No te importa<br />
+                            <br />
+                            Mes:
+                            <select name="mes">
+                                <option value="1">Enero</option>
+                                <option value="2">Febrero</option>
+                                <option value="3">Marzo</option>
+                                <option value="1">Enero</option>
+                                <option value="1">Enero</option>
+                                <option value="1">Enero</option>
+                                <option value="1">Enero</option>
+                                <option value="1">Enero</option>
+                                <option value="1">Enero</option>
+                                <option value="1">Enero</option>
+                                <option value="1">Enero</option>
+                            </select>
+                            <br />
+                            <br />
+                            <span class="fl">Mes Multiple: </span>
+                            <select name="mes" multiple>
+                                <option value="1">Enero</option>
+                                <option value="2">Febrero</option>
+                                <option value="3">Marzo</option>
+                                <option value="1">Enero</option>
+                                <option value="1">Enero</option>
+                                <option value="1">Enero</option>
+                                <option value="1">Enero</option>
+                                <option value="1">Enero</option>
+                                <option value="1">Enero</option>
+                                <option value="1">Enero</option>
+                                <option value="1">Enero</option>
+                            </select>
+                            <div class="cb"></div>
+                            <br>
+                            <p class="txt-center"><input type="submit" value="Aceptar" /></p>
+                            
+
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+            <div class="cb"></div>
+        </div>
+        <footer>&copy; Paco Pulido - S1DAM</footer>
+    </div>
+</body>
+
+</html>

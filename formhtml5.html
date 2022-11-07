@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 - CSS3</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        function updateTxtRange(valor) {
+            document.getElementById('idrange').value = valor
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <header></header>
+        <div id="principal">
+            <nav>
+                <ul>
+                    <a href="index.html"><li>HOME</li></a>
+                    <a href="parrafos.html"><li>PÁRRAFOS</li></a>
+                    <a href="enlaces.html"><li>ENLACES</li></a>
+                    <a href="listas.html"><li>LISTAS</li></a>
+                    <a href="tablas.html"><li>TABLAS</li></a>
+                    <a href="formularios.html"><li>FORMULARIOS</li></a>
+                    <a href="multimedia.html"><li>MULTIMEDIA</li></a>
+                    <a href="formhtml5.html"><li>FORM-HTML5</li></a>
+                </ul>
+            </nav>
+            <div id="content">
+                <div id="formhtml5">
+                    <h1 class="txt-center">Formularios HTML5</h1>
+                    <form action="pagina.php" method="get"
+                     enctype="multipart/form-data">
+                        <fieldset>
+                            <legend>Form HTML5</legend>
+                            <p><input type="url" name="url" id="" placeholder="url"></p>
+                            <p><input type="email" name="emal" id="" placeholder="email"></p>
+                            <p><input type="date" name="fecha" id=""></p>
+                            <p><input type="datetime-local" name="fechahoralocal" id=""></p>
+                            <p><input type="month" name="mes" id="" placeholder="mes"></p>
+                            <p><input type="week" name="semana" id="" placeholder="semana"></p>
+                            <p><input type="color" name="color" id=""></p>
+                            <p><input type="number" name="numero" id="" min="0" max="100" step="10"></p>
+                            <p>
+                                <input type="range" name="rango" id="" min="0" max="100" step="10" 
+                                onchange="updateTxtRange(this.value)">
+                                <input type="text" id="idrange" disabled>
+                            </p>
+                            <p><input type="file" name="fichero" id=""></p>
+                            <p><input type="hidden" name="var" value="kk"></p>
+                            <p><input type="image" name="imagen" src="img/heart.png" alt=""></p>
+                            <p><input type="search" name="buscar" id="" placeholder="search..."></p>
+                            <p><input type="reset" value="Clear"> <input type="submit" value="Enviar"></p> 
+                        </fieldset>
+                    </form>
+                    <p></p>
+                </div>
+            </div>
+            <div class="cb"></div>
+        </div>
+        <footer>&copy; Paco Pulido - S1DAM</footer>
+    </div>
+</body>
+</html>
